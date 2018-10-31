@@ -5,7 +5,7 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 'android-P'
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.ekalips.navigatortest"
         minSdkVersion 21
@@ -32,7 +32,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0-alpha3'
     implementation 'androidx.recyclerview:recyclerview:1.0.0-alpha3'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.1'
-    kapt "androidx.databinding:databinding-compiler:3.2.0-alpha17"
+    annotationProcessor "androidx.databinding:databinding-compiler:3.2.0-alpha17"
     implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha02" // use -ktx for Kotlin
     implementation "android.arch.navigation:navigation-ui-ktx:1.0.0-alpha02" // use -ktx for Kotlin
 
